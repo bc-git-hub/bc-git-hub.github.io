@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.col-small {
+    width: 90px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.promo{
+    width: 100%;
+    max-width: 500px;
+}
+
+.empty-row * {
+    border: none !important;
+}
+
+.deal-title {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 4px;
+}
+
+.bg-deal {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+}
+
+.bg-champagne {
+    background: url('/images/css_sprites.png') -116px -64px;
+}
+
+.bg-diamond {
+    background: url('/images/css_sprites.png') -12px -12px;
+}
+
+.bg-gold {
+    background: url('/images/css_sprites.png') -64px -12px;
+}
+
+.bg-pearl {
+    background: url('/images/css_sprites.png') -12px -64px;
+}
+
+.bg-ruby {
+    background: url('/images/css_sprites.png') -64px -64px;
+}
+
+.bg-silver {
+    background: url('/images/css_sprites.png') -116px -12px;
+}
+
+.smaller {
+    font-size: .7rem;
+}
+
+.instagram-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #FC8026;
+}
+
+.instagram-container a {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 45px;
+    text-decoration: none;
+    color: #FC8026;
+    background: url('/images/instagram.svg');
+    background-position: left center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.instagram-pusher {
+    height: 100px;
+}
