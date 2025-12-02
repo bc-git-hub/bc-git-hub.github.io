@@ -1,226 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>De Coulissen Nightclub Menu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Pacifico&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --main-color: #FC8026;
-      --accent-color: #00ffcc;
-      --bg-color: #0a0a0a;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>De Coulissen Brugge Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/menu-style.css?v=1002">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-    body {
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(circle at center, #1a1a1a, var(--bg-color));
-      font-family: 'Orbitron', sans-serif;
-      color: #fff;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px 20px;
-      font-size: 2.5em;
-      color: var(--main-color);
-      text-shadow: 0 0 8px var(--main-color), 0 0 20px var(--main-color);
-      font-family: 'Pacifico', cursive;
-      position: relative;
-    }
-
-    .star-banner {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.star-banner .star {
-  width: 60px;
-  height: 60px;
-  stroke: #FC8026;
-  fill: none;
-  stroke-width: 4;
-  filter: drop-shadow(0 0 5px #FC8026) drop-shadow(0 0 10px #FC8026);
-  position: absolute;
-  animation: neonGlow 3s infinite ease-in-out;
-}
-
-.star-banner .offset-1 {
-  left: -40px;
-}
-
-.star-banner .offset-2 {
-  left: 40px;
-}
-
-@keyframes neonGlow {
-  0%, 100% {
-    filter: drop-shadow(0 0 5px #FC8026) drop-shadow(0 0 10px #FC8026);
-  }
-  50% {
-    filter: drop-shadow(0 0 8px #FC8026) drop-shadow(0 0 16px #FC8026);
-  }
-}
-
-
-    .menu {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 2px solid var(--main-color);
-      border-radius: 15px;
-      box-shadow: 0 0 15px var(--main-color);
-    }
-
-    h2 {
-      color: var(--main-color);
-      border-bottom: 1px solid #ffb58044;
-      padding-bottom: 5px;
-      margin-top: 30px;
-      text-shadow: 0 0 10px var(--main-color);
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      padding: 8px 0;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dotted #333;
-    }
-
-    .section {
-      margin-bottom: 30px;
-    }
-
-    .price {
-      color: var(--accent-color);
-      text-shadow: 0 0 6px var(--accent-color);
-    }
-
-    .star-divider {
-      text-align: center;
-      color: var(--main-color);
-      margin: 20px 0;
-      text-shadow: 0 0 8px var(--main-color);
-    }
-
-    .packages {
-      background: rgba(255, 255, 255, 0.07);
-      padding: 15px;
-      border: 1px dashed var(--main-color);
-      border-radius: 10px;
-    }
-
-    .package {
-      margin-bottom: 20px;
-    }
-
-    .package-title {
-      color: var(--main-color);
-      font-size: 1.2em;
-      text-shadow: 0 0 10px var(--main-color);
-    }
-
-    .package-description {
-      color: #eee;
-      font-size: 0.9em;
-    }
-  </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSJB30Y4VR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TSJB30Y4VR');
+    </script>
 </head>
 <body>
-
-  <header>
-    <div class="star-banner">
-  <svg viewBox="0 0 100 100" class="star neon-star">
-    <polygon points="50,5 61,39 98,39 67,60 78,94 50,72 22,94 33,60 2,39 39,39" />
-  </svg>
-  <svg viewBox="0 0 100 100" class="star neon-star offset-1">
-    <polygon points="50,5 61,39 98,39 67,60 78,94 50,72 22,94 33,60 2,39 39,39" />
-  </svg>
-  <svg viewBox="0 0 100 100" class="star neon-star offset-2">
-    <polygon points="50,5 61,39 98,39 67,60 78,94 50,72 22,94 33,60 2,39 39,39" />
-  </svg>
-</div>
-    De Coulissen ✦ Nightclub Menu
-  </header>
-
-  <div class="menu">
-
-    <div class="section">
-      <h2>🍺 Bier</h2>
-      <ul>
-        <li><span>Pils</span><span class="price">€3,50</span></li>
-        <li><span>Kriek</span><span class="price">€3,50</span></li>
-        <li><span>Carlsberg</span><span class="price">€4,00</span></li>
-        <li><span>Duvel</span><span class="price">€5,50</span></li>
-      </ul>
+    <div class="wrapper pt-5 pb-5">
+        <div class="container">
+            <h1>
+                <img class="mx-auto mb-5 d-block logo" src="images/logo.png" alt="De Coulissen Brugge" />
+            </h1>
+            
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Bier</th>
+                        <th scope="col" class="col-small"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pils</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Kriek</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Carlsberg</td>
+                        <td class="text-end">&euro; 4,00</td>
+                    </tr>
+                    <tr>
+                        <td>Duvel</td>
+                        <td class="text-end">&euro; 5,50</td>
+                    </tr>
+                    <tr>
+                        <td>Strongbow Apple</td>
+                        <td class="text-end">&euro; 5,50</td>
+                    </tr>
+                    <tr>
+                        <td>Desperados</td>
+                        <td class="text-end">&euro; 5,50</td>
+                    </tr>                    
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Frisdrank</th>
+                        <th scope="col" class="col-small"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coca Cola / Coca Cola Zero</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Chaudfontaine Blauw / Rood</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Sprite</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Fanta Orange</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Fuze Tea</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Royal Bliss Tonic Water</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>Minute Maid Orange / Minute Maid Appel</td>
+                        <td class="text-end">&euro; 3,50</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Energy Drinks</th>
+                        <th scope="col" class="col-small"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Red Bull</td>
+                        <td class="text-end">&euro; 5,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Wijn / Aperitieven</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Witte Wijn</td>
+                        <td class="text-end">&euro; 5,00</td>
+                        <td class="text-end">&euro; 29,00</td>
+                    </tr>
+                    <tr>
+                        <td>Rosé Wijn</td>
+                        <td class="text-end">&euro; 5,00</td>
+                        <td class="text-end">&euro; 29,00</td>
+                    </tr>
+                    <tr>
+                        <td>Cava</td>
+                        <td class="text-end">&euro; 7,00</td>
+                        <td class="text-end">&euro; 35,00</td>
+                    </tr>
+                    <tr>
+                        <td>Martini Bellini</td>
+                        <td class="text-end">&euro; 8,00</td>
+                        <td class="text-end">&euro; 43,00</td>
+                    </tr>
+                    <tr>
+                        <td>Martini Wit / Rood</td>
+                        <td class="text-end">&euro; 5,00</td>
+                        <td class="text-end"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Shots</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Regular shots
+                            <small class="d-block ps-2">Regular Spirits</small>
+                            <small class="d-block ps-2">Sambuca</small>
+                            <small class="d-block ps-2">Get 27</small>
+                        </td>
+                        <td class="text-end">&euro; 4,00</td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Premium shots
+                            <small class="d-block ps-2">Premium Spirits</small>
+                            <small class="d-block ps-2">Patron "Silver"</small>
+                            <small class="d-block ps-2">Jägerbom</small>
+                        </td>
+                        <td class="text-end">&euro; 5,50</td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td>Jägermeister</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 110,00</td>
+                    </tr>
+                    <tr>
+                        <td>Rocket</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 70,00</td>
+                    </tr>
+                    <tr>
+                        <td>Flugel Box (40)</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Rum</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bacardi Blanco</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bacardi Blanco 3L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 490,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bacardi Reserva 4 Anos</td>
+                        <td class="text-end">&euro; 12,50</td>
+                        <td class="text-end">&euro; 125,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bacardi Spiced</td>
+                        <td class="text-end">&euro; 12,50</td>
+                        <td class="text-end">&euro; 125,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bacardi Razz</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 0,50 per glas /
+                                &euro; 5,00 per fles.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Vodka</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eristoff Wit / Rood / Zwart</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grey Goose</td>
+                        <td class="text-end">&euro; 14,50</td>
+                        <td class="text-end">&euro; 140,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grey Goose 1,5L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 275,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grey Goose 3L</th>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 575,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grey Goose 4,5L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 1075,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grey Goose 6L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 1530,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grey Goose Altius 0,7L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 295,00</td>
+                    </tr>
+                    <tr>
+                        <td>Belvedere</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>Belvedere 1,5L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 295,00</td>
+                    </tr>
+                    <tr>
+                        <td>Crystal Head</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 170,00</td>
+                    </tr>
+                    <tr>
+                        <td>Crystal Head 1,75L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 425,00</td>
+                    </tr>
+                    <tr>
+                        <td>Crystal Head 3L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 680,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 0,50 per glas /
+                                &euro; 5,00 per fles.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Gin</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bombay Sapphire</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Hendrick's Gin</td>
+                        <td class="text-end">&euro; 14,50</td>
+                        <td class="text-end">&euro; 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>Oxley</td>
+                        <td class="text-end">&euro; 18,00</td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td>Copperhead</td>
+                        <td class="text-end">&euro; 19,50</td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 0,50 per glas /
+                                &euro; 5,00 per fles.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Tequila</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pistoleros</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Patron "Silver"</td>
+                        <td class="text-end">&euro; 17,00</td>
+                        <td class="text-end">&euro; 130,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 0,50 per glas /
+                                &euro; 5,00 per fles.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Whiskey</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>William Lawson's</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Southern Comfort</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Jack Daniels / Jack Daniels Honey</td>
+                        <td class="text-end">&euro; 12,50</td>
+                        <td class="text-end">&euro; 125,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dewar's White Label</td>
+                        <td class="text-end">&euro; 12,50</td>
+                        <td class="text-end">&euro; 125,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dewar's 12 Years</td>
+                        <td class="text-end">&euro; 17,00</td>
+                        <td class="text-end">&euro; 170,00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 0,50 per glas /
+                                &euro; 5,00 per fles.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Divers</th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Appeljenever</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Bols</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Safari</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Passoa</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Malibu</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Cointreau</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Disaronno Amaretto</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Baileys</td>
+                        <td class="text-end">&euro; 12,00</td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 0,50 per glas /
+                                &euro; 5,00 per fles.</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Champagne
+                            <span class="bg-deal bg-champagne"></span>
+                        </th>
+                        <th scope="col" class="col-small text-end">Glas</th>
+                        <th scope="col" class="col-small text-end">Fles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Veuve Clicquot</td>
+                        <td class="text-end">&euro; 16,00</td>
+                        <td class="text-end">&euro; 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Veuve Clicquot 1,5L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 205,00</td>
+                    </tr>
+                    <tr>
+                        <td>Veuve Clicquot 3L <div class="smaller">(op bestelling)</div></td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 650,00</td>
+                    </tr>
+                    <!--<tr>
+                        <td>Veuve Clicquot Rich</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 110,00</td>
+                    </tr>
+                    <tr>
+                        <td>Veuve Clicquot Rich Rosé</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 145,00</td>
+                    </tr>-->
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Moët Ice</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Moët Ice Magnum</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 245,00</td>
+                    </tr>
+                    <tr>
+                        <td>Moët Ice Rosé</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 145,00</td>
+                    </tr>
+                    <tr>
+                        <td>Moët NIR</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 145,00</td>
+                    </tr>
+                    <tr>
+                        <td>Moët Imperial</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 100,00</td>
+                    </tr>
+                    <!--<tr>
+                        <td>Moët Gold Night 1,5L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 220,00</td>
+                    </tr>
+                    <tr>
+                        <td>Moët Gold Night 3L</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 935,00</td>
+                    </tr>-->
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ruinart "Blanc de Blancs"</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>Ruinart "Blanc de Blancs" Magnum</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 325,00</td>
+                    </tr>
+                    <tr>
+                        <td>Ruinart Rosé</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 170,00</td>
+                    </tr>
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dom Pérignon "Luminous"</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 345,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dom Pérignon Magnum</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 725,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dom Pérignon Magnum "Luminous"</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 770,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dom Pérignon Rosé</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 685,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dom Pérignon Rosé "Luminous"</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 570,00</td>
+                    </tr>
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Louis Roederer "Cristal"</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 595,00</td>
+                    </tr>
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Armand de Brignac "Ace of Spades"</td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 540,00</td>
+                    </tr>
+                    <tr>
+                        <td>Armand de Brignac "Ace of Spades" 1,5L <div class="smaller">(op bestelling)</div></td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 1450,00</td>
+                    </tr>
+                    <tr>
+                        <td>Armand de Brignac "Ace of Spades" 3L <div class="smaller">(op bestelling)</div></td>
+                        <td class="text-end"></td>
+                        <td class="text-end">Prijs op aanvraag</td>
+                    </tr>
+                    <tr>
+                        <td>Armand de Brignac "Ace of Spades" Rosé <div class="smaller">(op bestelling)</div></td>
+                        <td class="text-end"></td>
+                        <td class="text-end">&euro; 785,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Train of Champagne
+                            <span class="bg-deal bg-champagne"></span>
+                            <span class="bg-deal bg-champagne"></span>
+                            <span class="bg-deal bg-champagne"></span>
+                        </th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Veuve Clicquot <small>(5 bottles)</small></td>
+                        <td class="text-end">&euro; 450,00</td>
+                    </tr>
+                    <tr>
+                        <td>Veuve Clicquot <small>(10 bottles)</small></td>
+                        <td class="text-end">&euro; 900,00</td>
+                    </tr>
+                    <tr>
+                        <td>Veuve Clicquot <small>(20 bottles)</small></td>
+                        <td class="text-end">&euro; 1750,00</td>
+                    </tr>
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Möet Ice Impérial <small>(6 bottles)</small></td>
+                        <td class="text-end">&euro; 660,00</td>
+                    </tr>
+                    <tr>
+                        <td>Möet Ice Impérial <small>(10 bottles)</small></td>
+                        <td class="text-end">&euro; 1100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Möet Ice Impérial <small>(20 bottles)</small></td>
+                        <td class="text-end">&euro; 2100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Möet Ice Impérial Magnum  <small>(6 bottles)<br />(crown service)</small></td>
+                        <td class="text-end">&euro; 1395,00</td>
+                    </tr>
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ruinart "Blanc de Blancs" <small>(5 bottles)</small></td>
+                        <td class="text-end">&euro; 725,00</td>
+                    </tr>
+                    <tr>
+                        <td>Ruinart "Blanc de Blancs" <small>(10 bottles)</small></td>
+                        <td class="text-end">&euro; 1425,00</td>
+                    </tr>
+                    <tr>
+                        <td>Ruinart "Blanc de Blancs" <small>(20 bottles)</small></td>
+                        <td class="text-end">&euro; 2800,00</td>
+                    </tr>
+                    <tr class="empty-row">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dom Perignon "Luminous" <small>(5 bottles)</small></td>
+                        <td class="text-end">&euro; 1555,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dom Perignon "Luminous" <small>(10 bottles)</small></td>
+                        <td class="text-end">&euro; 3105,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dom Perignon "Luminous" <small>(20 bottles)</small></td>
+                        <td class="text-end">&euro; 6210,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="orange">
+                Coulissen deals
+            </h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span class="deal-title">The Silver</span>
+                            <span class="bg-deal bg-silver"></span>
+                        </th>
+                        <th scope="col" class="col-small text-end">&euro; 185,00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Veuve Clicquot 1x<br /> Fles Sterk (standaard) 1x
+                        </td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 5,00</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span class="deal-title">The Pearl</span>
+                            <span class="bg-deal bg-pearl"></span>
+                        </th>
+                        <th scope="col" class="col-small text-end">&euro; 325,00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Moët Ice Imperial 1x<br /> Fles Sterk (premium) 1x<br /> Fles Sterk (standaard) 1x
+                        </td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 5,00</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span class="deal-title">The Ruby</span>
+                            <span class="bg-deal bg-ruby"></span>
+                        </th>
+                        <th scope="col" class="col-small text-end">&euro; 410,00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Veuve Clicquot "Magnum" 1x<br /> Fles Sterk (premium) 2x
+                        </td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 5,00</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span class="deal-title">The Golden</span>
+                            <span class="bg-deal bg-gold"></span>
+                        </th>
+                        <th scope="col" class="col-small text-end">&euro; 630,00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Grey Goose "Magnum" 1x<br /> Dom Pérignon "Luminous" 1x<br /> Fles Sterk (standaard) 1x
+                        </td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 5,00</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <span class="deal-title">The Diamond</span>
+                            <span class="bg-deal bg-diamond"></span>
+                        </th>
+                        <th scope="col" class="col-small text-end">&euro; 825,00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Grey Goose "Magnum" 1x<br /> Dom Pérignon "Luminous" 2x
+                        </td>
+                        <td class="text-end"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="smaller">Prijzen inclusief softdrinks. Energydrinks + &euro; 5,00</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
-    <div class="star-divider">★ ★ ★</div>
-
-    <div class="section">
-      <h2>🥤 Frisdrank</h2>
-      <ul>
-        <li><span>Coca-Cola / Zero</span><span class="price">€3,50</span></li>
-        <li><span>Sprite / Fanta</span><span class="price">€3,50</span></li>
-        <li><span>Fuze Tea / Royal Bliss</span><span class="price">€3,50</span></li>
-      </ul>
+    <div class="instagram-pusher"></div>
+    <div class="instagram-container">
+        <a href="https://www.instagram.com/coulissenbrugge/" target="_blank">
+            Follow us on Instagram!
+        </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--
 
-    <div class="star-divider">★ ★ ★</div>
+   ______               __  _                     ____                   
+  / ____/_______  ___  / /_(_)___  ____ ______   / __/________  ____ ___ 
+ / / __/ ___/ _ \/ _ \/ __/ / __ \/ __ `/ ___/  / /_/ ___/ __ \/ __ `__ \
+/ /_/ / /  /  __/  __/ /_/ / / / / /_/ (__  )  / __/ /  / /_/ / / / / / /
+\____/_/   \___/\___/\__/_/_/ /_/\__, /____/  /_/ /_/   \____/_/ /_/ /_/ 
+                                /____/                                
+you know who
 
-    <div class="section">
-      <h2>⚡ Energy Drinks</h2>
-      <ul>
-        <li><span>Red Bull</span><span class="price">€5,00</span></li>
-      </ul>
-    </div>
-
-    <div class="star-divider">★ ★ ★</div>
-
-    <div class="section">
-      <h2>🍷 Wijn & Aperitieven</h2>
-      <ul>
-        <li><span>Witte / Rosé Wijn (glas)</span><span class="price">€5,00</span></li>
-        <li><span>Cava (glas / fles)</span><span class="price">€7,00 / €35,00</span></li>
-        <li><span>Martini Bellini</span><span class="price">€8,00</span></li>
-      </ul>
-    </div>
-
-    <div class="star-divider">★ ★ ★</div>
-
-    <div class="section packages">
-      <h2>★ ★ ★ VIP PACKAGES ★ ★ ★</h2>
-      <div class="package">
-        <div class="package-title">The Silver — €185</div>
-        <div class="package-description">Veuve Clicquot (1) + 1 Standard Bottle</div>
-      </div>
-      <div class="package">
-        <div class="package-title">The Pearl — €325</div>
-        <div class="package-description">Moët Ice (1) + 1 Premium + 1 Standard Bottle</div>
-      </div>
-      <div class="package">
-        <div class="package-title">The Ruby — €410</div>
-        <div class="package-description">Veuve Clicquot Magnum (1) + 2 Premium Bottles</div>
-      </div>
-      <div class="package">
-        <div class="package-title">The Golden — €630</div>
-        <div class="package-description">Grey Goose Magnum + Dom Pérignon + 1 Standard</div>
-      </div>
-      <div class="package">
-        <div class="package-title">The Diamond — €825</div>
-        <div class="package-description">Grey Goose Magnum + 2x Dom Pérignon Luminous</div>
-      </div>
-    </div>
-
-  </div>
-
+    -->
 </body>
+
 </html>
